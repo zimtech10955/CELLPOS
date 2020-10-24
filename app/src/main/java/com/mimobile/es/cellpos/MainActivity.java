@@ -233,7 +233,9 @@ import android.widget.Toast;
 
     public class MainActivity extends AppCompatActivity {
         private WebView mywebView;
-        String url="http://cellpos.us/pos";
+        //String url="http://cellpos.us/pos";
+        String url="http://cellpos.us/multishop";
+
         SwipeRefreshLayout swipeRefreshLayout;
         @Override
         protected void onCreate(Bundle savedInstanceState) {
@@ -304,15 +306,15 @@ loadwebview();
             webSettings.setJavaScriptEnabled(true);
 
             //make faster
-            mywebView.getSettings().setRenderPriority(WebSettings.RenderPriority.HIGH);
-            mywebView.getSettings().setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
-            mywebView.getSettings().setAppCacheEnabled(true);
-            mywebView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
-            webSettings.setDomStorageEnabled(true);
-            webSettings.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.NARROW_COLUMNS);
-            webSettings.setUseWideViewPort(true);
-            webSettings.setSavePassword(true);
-            webSettings.setSaveFormData(true);
+          //  mywebView.getSettings().setRenderPriority(WebSettings.RenderPriority.HIGH);
+         //   mywebView.getSettings().setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
+          //  mywebView.getSettings().setAppCacheEnabled(true);
+         //   mywebView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
+          //  webSettings.setDomStorageEnabled(true);
+          //  webSettings.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.NARROW_COLUMNS);
+          //  webSettings.setUseWideViewPort(true);
+         //   webSettings.setSavePassword(true);
+         //   webSettings.setSaveFormData(true);
 
 
             // Force links and redirects to open in the WebView instead of in a browser
